@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { useDispatch } from "react-redux"
-import { Container, Row, Col, Card, Toast } from 'react-bootstrap'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 import './style.scss'
 import { signupAPI } from '../apiUtils';
 import { Link } from 'react-router-dom';
-import { messageActionCreator } from '../reducers/userReducer';
 
 function Signup() {
 
@@ -15,7 +13,6 @@ function Signup() {
   const [password, setPassword] = useState('');
   const isValid = name && username && password;
   const [qrcode, setqrcode] = useState(null)
-  const dispatch = useDispatch();
   const signup = async (e) => {
     e.preventDefault();
     const payload = { name, username, password };

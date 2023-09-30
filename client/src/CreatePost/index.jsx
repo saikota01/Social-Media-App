@@ -3,7 +3,7 @@ import { Button, Card, Col, Container, Row } from 'react-bootstrap'
 import { CameraVideoFill, Images, EmojiLaughingFill } from 'react-bootstrap-icons'
 import './styles.scss'
 
-function CreatePost() {
+function CreatePost({ invokePostApi, postText, setPostText, image, setImage }) {
     return (
         <Container fluid>
             <Row>
@@ -15,7 +15,7 @@ function CreatePost() {
                         </section>
 
                         <section className='post-container__button'>
-                            <Button variant='outline-primary'>Post</Button>
+                            <Button variant='outline-primary' >Post</Button>
                             <div>
                                 <CameraVideoFill style={{ color: 'red'}}/>
                                 <h5>Live Video!!!</h5>
@@ -33,10 +33,9 @@ function CreatePost() {
                     </Card>
                 </Col>
             </Row>
-
         </Container>
 
     )
 }
 
-export default CreatePost
+export default CreatePost;
