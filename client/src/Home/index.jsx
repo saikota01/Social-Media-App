@@ -1,6 +1,5 @@
 import React from 'react'
 import CreatePost from '../CreatePost'
-import Post from '../Post'
 import Posts from '../Posts'
 import './style.scss'
 

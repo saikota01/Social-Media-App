@@ -13,7 +13,8 @@ const createPost = async (req, res, next) => {
         const data = await PostModel.createPost(postData);
         res.status(201);
         res.send(responseCreator('Post created successfully', data));
-    } catch (error) {
+    } 
+    catch (error) {
         next(error)
     }
 };
