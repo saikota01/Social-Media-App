@@ -35,7 +35,7 @@ function User(props) {
         <Col xs={{ span: 10, offset: 1 }} sm={{ span: 6, offset: 0 }} md={5} lg={4} xl={3}>
             <Card className='user'>
                 <Card.Body className='user-card'>
-                    <img src={picture} height="100px" width="100px" />
+                    <img src={picture} height="100px" width="100px" alt=''/>
                     <div className='info'>
                         <div>{fullName}</div>
                         {isFriend ? <Button variant="outline-danger" onClick={removeFreind}>Remove Friend</Button> :

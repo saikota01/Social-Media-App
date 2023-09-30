@@ -47,7 +47,7 @@ function Login() {
     <Container fluid>
       <Row>
         <Col lg={{ offset: 4, span: 4 }} md={{ offset: 3, span: 6 }} sm={{ offset: 1, span: 10 }}>
-          {!showResetForm ? <Card className="mt-3 p-3 signup">
+          {!showResetForm ? <Card className="mt-3 p-3 login-form">
             <Card.Title>Login</Card.Title>
             <Card.Body>
               <Form.Group className="mb-3" controlId="username">
